@@ -1,0 +1,12 @@
+prova-twig:
+    path: /prova-twig/{name}
+    controller: App\Controller\MainController::provaTwig
+crea-utenti:
+    path: /crea-utenti
+    controller: App\Controller\MainController::createUsers
+prova-doctrine:
+    path: /prova-doctrine
+    controller: App\Controller\MainController::provaDoctrine
+prova-symfony:
+    path: /prova-symfony
+    controller: App\Controller\MainController::provaSymfony

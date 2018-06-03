@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <style>
+    </style>
+
+    <table>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>Email</th>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.getNome() }}</td>
+                <td>{{ user.getCognome() }}</td>
+                <td>{{ user.getEmail() }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
